@@ -1,0 +1,21 @@
+Total Cost: 21000.0
+Factory 1 to DC 1: 0.0
+Factory 1 to DC 2: 22000.0
+Factory 2 to DC 1: 0.0
+Factory 2 to DC 2: 0.0
+DC 1 to Shop 1: 0.0
+DC 1 to Shop 2: 0.0
+DC 1 to Shop 3: 0.0
+DC 1 to Shop 4: 0.0
+DC 2 to Shop 1: 2000.0
+DC 2 to Shop 2: 5000.0
+DC 2 to Shop 3: 15000.0
+DC 2 to Shop 4: 0.0
+Factory 1 to Shop 1: 0.0
+Factory 1 to Shop 2: 0.0
+Factory 1 to Shop 3: 0.0
+Factory 1 to Shop 4: 0.0
+Factory 2 to Shop 1: 0.0
+Factory 2 to Shop 2: 0.0
+Factory 2 to Shop 3: 0.0
+Factory 2 to Shop 4: 20000.0
