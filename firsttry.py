@@ -1,5 +1,4 @@
 from pyomo.environ import *
-import sys
 
 model = ConcreteModel()
 
@@ -75,9 +74,9 @@ def printout(file=None):
     for i in factories:
         for k in shops:
             print(f"Factory {i} to Shop {k}: {model.x[i, k].value}", file=file)
-
+# Print to file
 with open("output.txt", 'w') as f:
     printout(f)
 
-# Display decision variable amounts
+# Display results in commandline
 printout()
