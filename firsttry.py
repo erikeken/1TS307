@@ -1,4 +1,5 @@
 from pyomo.environ import *
+import sys
 
 model = ConcreteModel()
 
@@ -64,15 +65,19 @@ result = solver.solve(model, tee=True)
 print("Status:", result.solver.status)
 print("Total Cost:", model.objective())
 
-# Display decision variable amounts
-for i in factories:
+def printout(file=None):
+    for i in factories:
+        for j in distribution_centers:
+            print(f"Factory {i} to DC {j}: {model.y[i, j].value}", file=file)
     for j in distribution_centers:
-        print(f"Factory {i} to DC {j}: {model.y[i, j].value}")
-for j in distribution_centers:
-    for k in shops:
-        print(f"DC {j} to Shop {k}: {model.z[j, k].value}")
-for i in factories:
-    for k in shops:
-        print(f"Factory {i} to Shop {k}: {model.x[i, k].value}")
+        for k in shops:
+            print(f"DC {j} to Shop {k}: {model.z[j, k].value}", file=file)
+    for i in factories:
+        for k in shops:
+            print(f"Factory {i} to Shop {k}: {model.x[i, k].value}", file=file)
 
-#hehejehejejehe
+with open("output.txt", 'w') as f:
+    printout(f)
+
+# Display decision variable amounts
+printout()

@@ -1,4 +1,3 @@
-Total Cost: 21000.0
 Factory 1 to DC 1: 0.0
 Factory 1 to DC 2: 22000.0
 Factory 2 to DC 1: 0.0
