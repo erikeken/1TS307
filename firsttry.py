@@ -74,3 +74,5 @@ for j in distribution_centers:
 for i in factories:
     for k in shops:
         print(f"Factory {i} to Shop {k}: {model.x[i, k].value}")
+
+#hehejehejejehe
