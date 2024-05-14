@@ -1,10 +1,10 @@
 import random
 import numpy as np
 # parameters
-population_size = 500
-generations = 2000
-crossover_rate = 0.7
-mutation_rate = 0.1
+population_size = 50
+generations = 1000
+crossover_rate = 0.8
+mutation_rate = 0.2
 cycle_time = 61
 
 # task time s
